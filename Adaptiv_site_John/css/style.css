@@ -2,6 +2,9 @@
 
 /*Обнуление*/
 
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;
+
+500;700;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -92,35 +95,53 @@ h6 {
 /*--------------------*/
 
 @font-face {
-  font-family: "BebasNeue-Regular";
+  font-family: "icon";
   font-display: swap;
-  src: url("../fonts/BebasNeue-Regular.woff") format("woff") url("../fonts/BebasNeue-Regular.woff2") format("woff2");
+  src: url("../fonts/icon.woff") format("woff") url("../fonts/icon.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Lato";
+  font-family: "icons";
   font-display: swap;
-  src: url("../fonts/Lato-Bold.woff") format("woff") url("../fonts/Lato-Bold.woff2") format("woff2");
-  font-weight: 700;
+  src: url("../fonts/icons.woff") format "woff", rl("../fonts/icons.woff2#icons") format "woff2";
+  font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
-@font-face {
-  font-family: "Lato";
-  font-display: swap;
-  src: url("../fonts/Lato-Regular.woff") format("woff") url("../fonts/Lato-Regular.woff2") format("woff2");
-  font-weight: 400;
+[class^="_icon-"]:before,
+[class*="_icon-"]:before {
+  font-family: "icons";
   font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: "SF-UI-Display-Regular";
-  font-display: swap;
-  src: url("../fonts/SF-UI-Display-Regular.woff") format("woff") url("../fonts/SF-UI-Display-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+[class^="_icon-"]:before,
+[class*="_icon-"]:before {
+  display: block;
+}
+
+._icon-linkedin:before {
+  content: "\e900";
+}
+
+._icon-twitter:before {
+  content: "\e901";
+}
+
+._icon-insta:before {
+  content: "\e902";
+}
+
+._icon-fb:before {
+  content: "\e903";
 }
 @supports (-webkit-appearance:none){
 
