@@ -10,6 +10,9 @@
       height: 82px;
       align-items: center;
       padding: 10px 0;
+      @media (max-width: $md3+px) {
+         height: 50px;
+      }
    }
 }
 
@@ -19,19 +22,25 @@
 
    &__body {
       @media (max-width: $md3+px) {
+         //  transform: translate(0px, -100%);
+         transition: transform 0.8s ease 0s;
          position: fixed;
          width: 100%;
          height: 100%;
-         top: 0;
+         top: -100%;
          left: 0;
          overflow: auto;
          padding: 60px 10px 30px 10px;
+         background-color: rgba(255, 255, 255, 0.8);
+         &._active {
+            transform: translate(0px, 100%);
+         }
       }
    }
 
    &__list {
       li {
-         margin: 0px 0px 10px 0px;
+         margin: 0px 0px 40px 0px;
          &:last-child {
             margin: 0px 0px 0px 0px;
          }
@@ -55,6 +64,11 @@
          &:hover {
             color: #ff6464;
          }
+      }
+      @media (max-width: $md3+px) {
+         font-size: 40px;
+         display: block;
+         text-align: center;
       }
    }
 }
