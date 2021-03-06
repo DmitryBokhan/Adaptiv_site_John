@@ -1,0 +1,14 @@
+.title {
+   font-size: 44px;
+   line-height: 60 / 44 * 100%;
+   color: #21243d;
+   font-weight: 700;
+   @media (max-width: $md3 + px) {
+      font-size: 32px;
+   }
+}
+.text {
+   font-size: 16px;
+   line-height: 24px;
+   color: #21243d;
+}

@@ -1,0 +1,71 @@
+.hello {
+   padding: 38px 0px 70px 0px;
+   @media (max-width: $md1 + px) {
+      padding: 0px 0px 70px 0px;
+   }
+   @media (max-width: $md3 + px) {
+      padding: 0px 0px 60px 0px;
+   }
+   &__container {
+      display: flex;
+
+      @media (max-width: $md3+px) {
+         text-align: center;
+         flex-direction: column-reverse;
+      }
+   }
+
+   &__content {
+      align-items: flex-start;
+      flex: 1 1 auto;
+      padding: 18px 110px 0px 0px;
+      *:last-child {
+         //убирает висячий отступ у последнего элемента в колонке
+         margin-bottom: 0;
+      }
+      @media (max-width: $md1 + px) {
+         padding: 18px 50px 0px 0px;
+      }
+      @media (max-width: $md3 + px) {
+         padding: 40px 0px 0px 0px;
+      }
+   }
+
+   &__title {
+      margin: 0px 0px 25px 0px;
+      @media (max-width: $md3 + px) {
+         margin: 0px 0px 20px 0px;
+      }
+   }
+
+   &__text {
+      margin: 0px 0px 35px 0px;
+      @media (max-width: $md3 + px) {
+         margin: 0px 0px 25px 0px;
+         padding: 0px 15px;
+      }
+   }
+
+   &__btn {
+      margin: 0px 0px 25px 0px;
+      @media (max-width: $md3 + px) {
+         margin: 0px 0px 20px 0px;
+      }
+   }
+
+   &__avatar {
+      flex: 0 0 223px;
+      width: 223px;
+      height: 223px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: -5px 13px 0px 0px #edf7fa;
+      img {
+         width: 100%;
+      }
+      @media (max-width: $md3 + px) {
+         width: 170px;
+         height: 170px;
+      }
+   }
+}
