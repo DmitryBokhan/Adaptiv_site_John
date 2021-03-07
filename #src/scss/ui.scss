@@ -12,3 +12,11 @@
    line-height: 24px;
    color: #21243d;
 }
+
+.title-post {
+   font-size: 22px;
+   @media (max-width: $md3+px) {
+      text-align: center;
+      font-size: 18px;
+   }
+}

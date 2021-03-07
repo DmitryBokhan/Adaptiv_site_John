@@ -180,6 +180,10 @@ body._lock {
   color: #21243d;
 }
 
+.title-post {
+  font-size: 22px;
+}
+
 .btn {
   color: #fff;
   background-color: #ff6464;
@@ -283,6 +287,75 @@ body._lock {
   width: 100%;
 }
 
+.recent-posts {
+  background: #edf7fa;
+  padding: 25px 0px 13px 0px;
+}
+
+.recent-posts__header {
+  display: flex;
+  margin: 0px 0px 20px 0px;
+}
+
+.recent-posts__title {
+  padding: 0px 20px 0px 0px;
+  flex: 1 1 auto;
+}
+
+.recent-posts__view-all {
+  font-size: 16px;
+  flex: 0 0 auto;
+  color: #00a8cc;
+  line-height: 23px;
+}
+
+.recent-posts__items {
+  margin: 0px -10px;
+}
+
+.recent-posts__column {
+  flex: 0 1 50%;
+  padding: 0px 10px;
+  margin: 0px 0px 17px 0px;
+}
+
+.recent-post {
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.recent-post *:last-child {
+  margin-bottom: 0;
+}
+
+.recent-post__title {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 146.15385%;
+  color: inherit;
+  cursor: pointer;
+  transition: color 0.3s ease 0s;
+  margin: 0px 0px 17px 0px;
+}
+
+.recent-post__info {
+  font-size: 18px;
+  line-height: 144.44444%;
+  margin: 0px 0px 15px 0px;
+}
+
+.recent-post__info span {
+  margin: 0px 10px;
+}
+
+.recent-post__text {
+  margin: 0px 0px 15px 0px;
+}
+
 .page {
   padding: 90px 0px 0px 0px;
   flex: 1 1 auto;
@@ -296,10 +369,18 @@ body._lock {
   .menu__list li {
     margin: 0px 33px 0px 0px;
   }
+
+  .recent-posts__items {
+    display: flex;
+  }
 }
 
 @media (min-width: 991.98px) {
   .menu__link:hover {
+    color: #ff6464;
+  }
+
+  .recent-post__title:hover {
     color: #ff6464;
   }
 }
@@ -334,6 +415,11 @@ body._lock {
 @media (max-width: 767.98px) {
   .title {
     font-size: 32px;
+  }
+
+  .title-post {
+    text-align: center;
+    font-size: 18px;
   }
 
   .header__menu {
@@ -414,7 +500,7 @@ body._lock {
   }
 
   .hello__content {
-    padding: 40px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 
   .hello__title {
@@ -433,6 +519,29 @@ body._lock {
   .hello__avatar {
     width: 170px;
     height: 170px;
+    margin: 0px 0px 40px 0px;
+  }
+
+  .recent-posts {
+    padding: 25px 0px 23px 0px;
+  }
+
+  .recent-posts__view-all {
+    display: none;
+  }
+
+  .recent-post {
+    padding: 15px;
+  }
+
+  .recent-post__title {
+    font-size: 22px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .recent-post__info {
+    font-size: 16px;
+    margin: 0px 0px 10px 0px;
   }
 
   .page {
