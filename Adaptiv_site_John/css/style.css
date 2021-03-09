@@ -174,7 +174,8 @@ body._lock {
   font-weight: 700;
 }
 
-.text {
+.text,
+.article__text p {
   font-size: 16px;
   line-height: 24px;
   color: #21243d;
@@ -382,6 +383,14 @@ body._lock {
   margin: 0px 0px 20px 0px;
 }
 
+.works {
+  padding-bottom: 60px;
+}
+
+.works__items {
+  padding: 0px 0px 60px 0px;
+}
+
 .works__item {
   padding: 0px 0px 30px 0px;
   margin: 0px 0px 30px 0px;
@@ -404,6 +413,10 @@ body._lock {
   flex: 1 1 auto;
 }
 
+.works__main-title {
+  margin-bottom: 45px;
+}
+
 .works__title {
   display: inline-block;
   color: inherit;
@@ -411,6 +424,7 @@ body._lock {
   font-weight: 700;
   line-height: 146.66667%;
   margin: 0px 0px 15px 0px;
+  transition: color 0.3s ease 0s;
 }
 
 .works__info {
@@ -490,6 +504,53 @@ body._lock {
   color: #8695a4;
 }
 
+.article {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 0px 10px 30px;
+}
+
+.article__title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 147.05882%;
+  margin: 0px 0px 30px 0px;
+}
+
+.article__info {
+  display: flex;
+  margin: 0px 0px 20px 0px;
+}
+
+.article__year {
+  background: #ff7c7c;
+  border-radius: 16px;
+  height: 25px;
+  padding: 0px 10px;
+  font-size: 18px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.article__category {
+  align-self: center;
+  font-size: 20px;
+  line-height: 125%;
+  margin: 0px 0px 0px 25px;
+}
+
+.article__text p {
+  margin: 0px 0px 20px 0px;
+}
+
+.article__text img {
+  min-width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+
 .page {
   padding: 90px 0px 0px 0px;
   flex: 1 1 auto;
@@ -537,6 +598,10 @@ body._lock {
   }
 
   .recent-post__title:hover {
+    color: #ff6464;
+  }
+
+  .works__title:hover {
     color: #ff6464;
   }
 
@@ -722,9 +787,21 @@ body._lock {
     margin: 0px 15px 0px 0px;
   }
 
+  .works {
+    padding-bottom: 30px;
+  }
+
+  .works__items {
+    padding: 0px 0px 30px 0px;
+  }
+
   .works__image {
     margin: 0px 0px 17px 0px;
     padding: 0px 0px 60% 0px;
+  }
+
+  .works__main-title {
+    margin-bottom: 20px;
   }
 
   .works__title {
@@ -754,6 +831,14 @@ body._lock {
 
   .blog__info {
     font-size: 16px;
+  }
+
+  .article__title {
+    font-size: 30px;
+  }
+
+  .article__category {
+    font-size: 18px;
   }
 
   .page {
