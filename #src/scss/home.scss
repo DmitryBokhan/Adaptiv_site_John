@@ -178,4 +178,14 @@
    &__title {
       margin: 0px 0px 20px 0px;
    }
+   &__items {
+      @media (max-width: $md3+px) {
+         display: flex;
+         overflow: auto;
+         .works__item {
+            flex: 0 0 90%;
+            margin: 0px 15px 0px 0px;
+         }
+      }
+   }
 }

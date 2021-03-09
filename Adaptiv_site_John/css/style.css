@@ -14,9 +14,9 @@
 }
 
 @font-face {
-  font-family: "icons";
+  font-family: "icon";
   font-display: swap;
-  src: url("../fonts/icons.woff") format "woff", rl("../fonts/icons.woff2#icons") format "woff2";
+  src: url("../fonts/icon.woff") format("woff"), url("../fonts/icon.woff2#icon") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,7 +24,7 @@
 
 [class^="_icon-"]:before,
 [class*="_icon-"]:before {
-  font-family: "icons";
+  font-family: "icon";
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -435,9 +435,31 @@ body._lock {
   margin: 0px 0px 0px 25px;
 }
 
+.footer {
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+}
+
+.footer__social {
+  margin: 0px 0px 25px 0px;
+}
+
 .page {
   padding: 90px 0px 0px 0px;
   flex: 1 1 auto;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item {
+  transition: color 0.3s ease 0s;
+  margin: 0px 17px;
+  font-size: 30px;
+  color: inherit;
 }
 
 @media (min-width: 767.98px) {
@@ -469,6 +491,10 @@ body._lock {
   }
 
   .recent-post__title:hover {
+    color: #ff6464;
+  }
+
+  .social__item:hover {
     color: #ff6464;
   }
 }
@@ -636,12 +662,12 @@ body._lock {
     padding: 30px 0px 30px 0px;
   }
 
-  .works {
+  .featured-works__items {
     display: flex;
     overflow: auto;
   }
 
-  .works__item {
+  .featured-works__items .works__item {
     flex: 0 0 90%;
     margin: 0px 15px 0px 0px;
   }

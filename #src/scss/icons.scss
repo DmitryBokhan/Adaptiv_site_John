@@ -1,13 +1,14 @@
 @font-face {
-   font-family: "icons";
+   font-family: "icon";
    font-display: swap;
-   src: url("../fonts/icons.woff") format ("woff"), rl("../fonts/icons.woff2#icons") format ("woff2");
+   src: url("../fonts/icon.woff") format("woff"), url("../fonts/icon.woff2#icon") format("woff2");
    font-weight: normal;
    font-style: normal;
    font-display: block;
 }
+//===================
 %ic {
-   font-family: "icons";
+   font-family: "icon";
    font-style: normal;
    font-weight: normal;
    font-variant: normal;
